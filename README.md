@@ -7,7 +7,8 @@ http://downloads.asterisk.org/pub/telephony/asterisk/releases/
 This spec file covers the installation of version asterisk-14.6.1.tar.gz
 
 Dependencies:
-yum groupinstall "Dvelopment Tools"
+yum groupinstall "Development Tools"
+
 yum install \
 	bison doxygen flex gmime-devel iksemel-devel  jansson-devel  
 	libcap-devel  libedit-devel gsm-devel libical-devel \
