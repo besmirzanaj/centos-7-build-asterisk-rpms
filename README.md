@@ -1,10 +1,18 @@
 # centos-7-build-asterisk-rpms
 How to build asterisk rpms on Centos 7
 
-I created these files when i need to install asterisk-13 at CentOS server.
-I dont find any repository with ready spec files, so i created them.
+Download Asterisk from here
+http://downloads.asterisk.org/pub/telephony/asterisk/releases/
 
-mostly borrowed from https://github.com/pld-linux/asterisk/
-i adopted specs to centos
+This spec file covers the installation of version asterisk-14.6.1.tar.gz
 
-it is very simple asterisk build, because i need just simple pbx 
+Dependencies:
+yum groupinstall "Dvelopment Tools"
+yum install \
+	bison doxygen flex gmime-devel iksemel-devel  jansson-devel  
+	libcap-devel  libedit-devel gsm-devel libical-devel \
+	libtiff-devel  libuuid-devel ncurses-devel  neon-devel \
+	net-snmp-devel  newt-devel openssl-devel pam-devel popt-devel \
+	spandsp-devel  speex-devel sqlite-devel libsrtp-devel \
+	uriparser-devel gcc-c++ 
+ 
